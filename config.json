@@ -1,5 +1,5 @@
 {
-    "dao_type": "sqlserver", 
+    "dao_type": "excel", 
     "mysql": {
         "host": "localhost",
         "user": "root",
@@ -8,6 +8,9 @@
     },
     "txt": {
         "filepath": "usuarios.txt"
+    },
+    "excel": {
+        "filepath": "usuarios.xlsx"
     },
     "sqlserver": {
         "host": "SARA_HIPOLITO", 

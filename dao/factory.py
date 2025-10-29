@@ -3,6 +3,7 @@ from dao.user_dao_mysql import UserDAOMySQL
 from dao.user_dao_txt import UserDAOTxt
 from dao.user_dao_xml import UserDAOXML
 from dao.user_dao_sqlserver import UserDAOSQLServer  
+from dao.user_dao_excel import UserDAOExcel
 
 def get_dao_from_config(config_path="config.json"):
     with open(config_path, "r") as f:
@@ -24,6 +25,9 @@ def get_dao_from_config(config_path="config.json"):
 
     elif dao_type == "xml":
         return UserDAOXML(config["xml"]["filepath"])
+    
+    elif dao_type == "excel":
+        return UserDAOExcel(config["excel"]["filepath"])
     
     elif dao_type == "sqlserver": 
         mssql_conf = config["sqlserver"]
