@@ -1,15 +1,18 @@
 {
-    "dao_type": "xml",
+    "dao_type": "sqlserver", 
     "mysql": {
         "host": "localhost",
         "user": "root",
-        "password": "rootpass",
+        "password": "",
         "database": "mi_base"
     },
     "txt": {
         "filepath": "usuarios.txt"
     },
-    "xml": {
-        "filepath": "usuarios.xml"
+    "sqlserver": {
+        "host": "SARA_HIPOLITO", 
+        "user": "sa", 
+        "password": "123", 
+        "database": "Paradigmas" 
     }
 }
