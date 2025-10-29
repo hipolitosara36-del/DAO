@@ -2,7 +2,7 @@ import json
 from dao.user_dao_mysql import UserDAOMySQL
 from dao.user_dao_txt import UserDAOTxt
 from dao.user_dao_xml import UserDAOXML
-from dao.user_dao_sqlserver import UserDAOSQLServer  # ¡Importa tu nueva clase!
+from dao.user_dao_sqlserver import UserDAOSQLServer  
 
 def get_dao_from_config(config_path="config.json"):
     with open(config_path, "r") as f:
